@@ -1,0 +1,26 @@
+
+
+{% extends 'base.html' %}
+{% block content%}
+
+
+
+
+<form class="searchbar" action="" method="POST">
+    {%csrf_token%}
+
+    {{search_room_form}}
+
+
+</form>
+<section class="rooms">
+    {% for room in rooms %}
+
+    <a class="room" href="{% url 'room' room.id %}">
+        <h3 class="room_title">{{room.name}}</h3>
+        <p>{{room.description}}</p>
+        <span class="date">{{room.created| date:"d M Y" }}</span>
+    </a>
+    {% endfor %}
+</section>
+{% endblock content%}

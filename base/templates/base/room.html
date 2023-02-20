@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content%}
+
+
+<div class="room_description">
+    <h1 class="name">{{room.name}}</h1>
+    <p class="description">{{room.description}}</p>
+
+</div>
+
+<section class="messages">
+    {% for message in room_messages %}
+    <div class="message">
+        <p>{{message}}</p>
+        <span class="date">{{message.created| date:"d M Y" }}</span>
+       
+    </div>
+
+    {% endfor %}
+</section>
+
+<form class="message_form" action="" method="POST">
+    {%csrf_token%}
+
+    {{form}}
+
+
+</form>
+{% endblock content%}

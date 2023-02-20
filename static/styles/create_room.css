@@ -1,0 +1,46 @@
+
+
+.room_create_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    margin: 10rem auto;
+}
+
+.room_create_form label {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    
+}
+.room_create_form input, textarea {
+    color: white;
+    background-color: #34373c;
+    border: none;
+    margin-bottom: 2rem;
+    outline: none;
+    padding: 2rem;
+    border-radius: 5px;
+
+    max-width: 100%;
+    transition: .2s;
+}
+
+
+.room_create_form textarea {
+    min-height: 15rem;
+    resize: vertical;
+}
+
+
+.room_create_form input:hover, textarea:hover {
+    background-color: #35383d;
+}
+.room_create_form  .submit {
+    transition: .2s;
+    cursor: pointer;
+}
+.room_create_form .submit:hover {
+
+    background-color: #43474e;
+}

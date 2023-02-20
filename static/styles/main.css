@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 67.5%;
+}
+
+h3 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+p,
+a {
+  font-size: 1.4rem;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60rem;
+  margin: auto;
+  color: white;
+  padding-top: 20px;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav .search {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2b2d31;
+  color: white;
+  border: none;
+  display: block;
+  outline: none;
+  transition: .2s;
+}
+
+nav .search:hover, nav .search:focus {
+  background-color: #25272a;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  transition: .3s;
+
+}
+
+nav .home {
+  padding:1rem;
+  border-radius: 5px;
+}
+nav .home:hover {
+  background-color: #43474e;
+}
+
+nav .plus {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+  transition: .2s;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  transition-timing-function:ease-in-out;
+
+}
+
+nav .plus:hover {
+  transform: rotate(45deg);
+}
+
+nav .plus::before {
+  width: 2px;
+  height: 20px;
+  background-color: white;
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: rotate(90deg);
+  right: 50%;
+  overflow: hidden;
+}
+nav .plus::after {
+  width: 2px;
+  height: 20px;
+  background-color: white;
+  display: block;
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 0;
+  transform: rotate(0deg);
+}
+.searchbar {
+  margin-top: 20vh;
+}
+
+.searchbar input {
+  width: 60rem;
+  margin: auto;
+  display: block;
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  outline: none;
+  position: relative;
+}
+
+.rooms {
+  margin: auto;
+}
+
+.room {
+  border-radius: 5px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  width: 60rem;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 4rem;
+  background-color: #34373c;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+
+  padding: 2rem;
+  line-break: normal;
+  position: relative;
+}
+
+.room:hover {
+  background-color: #43474e;
+}
+.room .date {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: 0.2;
+  font-size: 1rem;
+}
+
+
+
+
+p {
+  word-wrap: break-word;
+}
